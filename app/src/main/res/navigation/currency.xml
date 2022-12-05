@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currency"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.example.currency.splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splash_to_screen2"
+            app:destination="@id/screen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/screen2"
+        android:name="com.example.currency.Screen"
+        android:label="fragment_screen"
+        tools:layout="@layout/fragment_screen" />
+</navigation>
